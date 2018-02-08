@@ -1,5 +1,4 @@
 /*
- * @Author slashhuang
  * webpack项目配置
  */
 var  plugins = require('./plugin_loader.js')['plugins'];
@@ -17,16 +16,16 @@ module.exports =  {
         context:path.resolve(__dirname,'../'),
         watch:process.env['NODE_ENV']!='prod',
         entry: {
-            index:'./js/index.js',
-            // manage:"./js/manage/index.js",
-            // detail:"./js/detail/index.js",
-            // list:"./js/list/index.js",
+            index:'./js/index/index.js',
+            manage:"./js/manage/index.js",
+            //detail:"./js/detail/index.js",
+            list:"./js/list/index.js",
             // about:"./js/about/index.js",
             common: [
                 'react',
                 "react-dom",
                  "reset",
-                // 'common_lib'
+                'common_lib'
             ]
         },
         // debug: true,

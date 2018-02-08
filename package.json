@@ -1,9 +1,9 @@
 {
   "name": "public",
   "version": "1.0.0",
-  "description": "front-end for pure-node-notebook",
+  "description": "front-end for node_blog_fe",
   "main": "index.js",
-  "author": "slashhuang",
+  "author": "hungryyang",
   "scripts": {
     "start": "rm -rf dist  && webpack --config ./build/webpack.config.js",
     "build": "NODE_ENV=prod webpack --config ./build/webpack.config.js"
@@ -44,7 +44,7 @@
   "dependencies": {
     "antd": "^2.9.1",
     "axios": "^0.16.1",
-    "highlight.js": "^9.10.0",
+    "highlight.js": "^9.12.0",
     "jquery": "^3.2.1",
     "marked": "^0.3.6",
     "react": "^15.5.4",
